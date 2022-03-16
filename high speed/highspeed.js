@@ -8,11 +8,7 @@ function calculateEMI(){
     var processingFee = 1500
     var addOn = 0
 
-    if(DP<27600){
-        addOn=2000
-    } else{
-        addOn=0
-    }
+   
     var realVehiclePrice= vehiclePrice+HP+stampCharges+processingFee
     var loanAMT = realVehiclePrice-DP
     var tenureY = tenureM/12
