@@ -13,7 +13,7 @@ function calculateEMI(){
     } else{
         addOn=0
     }
-    var realVehiclePrice= vehiclePrice+HP+stampCharges+processingFee+addOn
+    var realVehiclePrice= vehiclePrice+HP+stampCharges+processingFee
     var loanAMT = realVehiclePrice-DP
     var tenureY = tenureM/12
     var installments = Math.round((loanAMT+(loanAMT*tenureY*ROI))/tenureM)
