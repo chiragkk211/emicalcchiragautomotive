@@ -6,7 +6,6 @@ function calculateEMI(){
     var HP = 500
     var stampCharges = 1500
     var processingFee = 1500
-    var addOn = 0
 
    
     var realVehiclePrice= vehiclePrice+HP+stampCharges+processingFee
@@ -14,9 +13,15 @@ function calculateEMI(){
     var tenureY = tenureM/12
     var installments = Math.round((loanAMT+(loanAMT*tenureY*ROI))/tenureM)
     var interestVehiclePrice = Math.round((installments*tenureM)+DP)
+   
+    var interest = interestVehiclePrice-vehiclePrice
 
     document.getElementById("installments").innerText= installments
     document.getElementById("price").innerText= interestVehiclePrice
+    
+    document.getElementById("interest").innerText= interest
+
+
 
 
 
