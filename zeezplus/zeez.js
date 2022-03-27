@@ -1,19 +1,17 @@
 function calculateEMI(){
     var DP = parseInt(document.getElementById("downpayment").value)
-    var vehiclePrice= parseInt(document.getElementById("vehiclePrice").value)
+    var vehiclePrice= 67990
     var tenureM = parseInt(document.getElementById("tenure").value)
   
 
  
 
-    var ROI = 0.135
+    var ROI = 0.13
    
-    var stampCharges = 1500
-    var processingFee = 1500
-    var realVehiclePrice= vehiclePrice+stampCharges+processingFee
+    var processingFee = 1180
+    var interest = 600
+    var realVehiclePrice= vehiclePrice+processingFee+interest
     var loanAMT = realVehiclePrice-DP
-    var extraPF = 0.02*loanAMT
-    loanAMT = loanAMT+extraPF
     var tenureY = tenureM/12
 
     
