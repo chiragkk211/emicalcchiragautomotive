@@ -5,10 +5,11 @@ function calculateEMI(){
     var ROI = 0.0999
     var HP = 500
     var stampCharges = 1500
-    var processingFee = 1500
+    var processingFee = 2200
+    var insurance = 2500
 
    
-    var realVehiclePrice= vehiclePrice+HP+stampCharges+processingFee
+    var realVehiclePrice= vehiclePrice+HP+stampCharges+processingFee+insurance
     var loanAMT = realVehiclePrice-DP
     var tenureY = tenureM/12
     var installments = Math.round((loanAMT+(loanAMT*tenureY*ROI))/tenureM)
