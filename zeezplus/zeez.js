@@ -1,6 +1,6 @@
 function calculateEMI(){
     var DP = parseInt(document.getElementById("downpayment").value)
-    var vehiclePrice= 67990
+    var vehiclePrice= 65500
     var tenureM = parseInt(document.getElementById("tenure").value)
   
 
