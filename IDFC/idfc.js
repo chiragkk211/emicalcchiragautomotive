@@ -5,10 +5,10 @@ function calculateEMI(){
   
   
     
-    var docuCharges = 4150
+    var docuCharges = 3300
     var loanAmt = vehiclePrice+docuCharges-DP
     var extraPF = 0.02*loanAmt
-    loanAmt = loanAmt+extraPF
+    loanAmt = loanAmt+extraPF+2000
     var realVehiclePrice = loanAmt+DP
     var noHPFund = 0.7*realVehiclePrice
     var interestRtPM = 0
@@ -16,7 +16,7 @@ function calculateEMI(){
     if(loanAmt>=noHPFund){
       interestRtPM = 0.00895833
     } else {
-      interestRtPM = 0.006475
+      interestRtPM = 0.007291666
     
     }
   
