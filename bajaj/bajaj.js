@@ -5,7 +5,7 @@ function calculateEMI(){
 
 
   
-  var docuCharges = 4150
+  var docuCharges = 5500
   var loanAmt = vehiclePrice+docuCharges-DP
   var interestRtPM = 0.008958333
 
