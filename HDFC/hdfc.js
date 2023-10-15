@@ -7,7 +7,7 @@ function calculateEMI(){
   var vehiclePrice=0
 
   if (model=="Magnus EX"){
-    vehiclePrice=113760
+    vehiclePrice=115760
   }
   if(model=="Zeal EX"){
     vehiclePrice=104319
