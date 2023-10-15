@@ -17,7 +17,7 @@ function calculateEMI(){
     ins=2900
   }
   if (model=="Magnus EX"){
-    vehiclePrice=113760
+    vehiclePrice=115760
   }
   if(model=="Zeal EX"){
     vehiclePrice=104319
@@ -25,7 +25,7 @@ function calculateEMI(){
   
   margin=DP-3500
   LA=(vehiclePrice-margin)+ins
-  var intrt=(11/12)/100
+  var intrt=(11.25/12)/100
 
   
   intpm=LA*intrt
