@@ -17,16 +17,16 @@ function calculateEMI(){
         vehiclePrice=128335
       }
     if(model=="Kratos R"){
-        vehiclePrice=184700
+        vehiclePrice=167950
       }
     if (model=="Magnus LT"){
         vehiclePrice=101282
       }
     
     
-    margin=DP-9027
+    margin=DP-1250
     LA=(vehiclePrice+1500-margin)
-    var intrt=(4.99/12)/100
+    var intrt=(7.99/12)/100
    
     
     intpm=LA*intrt
