@@ -26,7 +26,7 @@ function calculateEMI(){
     
     margin=DP-2450
     LA=(vehiclePrice+1500-margin)
-    var intrt=(7.99/12)/100
+    var intrt=(8.99/12)/100
    
     
     intpm=LA*intrt
