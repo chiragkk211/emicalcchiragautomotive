@@ -8,26 +8,31 @@ function calculateEMI(){
     var vehiclePrice=0
 
     if (model=="Magnus EX"){
-      vehiclePrice=109260
+      vehiclePrice=108300
     }
     if(model=="Zeal EX"){
       vehiclePrice=99500
     }
     if(model=="Primus"){
-        vehiclePrice=128335
+        vehiclePrice=123200
       }
     if(model=="Kratos R"){
         vehiclePrice=167950
       }
     if (model=="Magnus LT"){
-        vehiclePrice=101282
+        vehiclePrice=99800
       }
+    if (model=="Nexus ST"){
+        vehiclePrice=138935
+      }  
     
-    
-    margin=DP-2450
-    LA=(vehiclePrice+1500-margin)
-    var intrt=(8.99/12)/100
-   
+    vehiclePrice=vehiclePrice+1500
+    margin=(DP-(0.02*vehiclePrice)-2000)/0.98
+    LA=(vehiclePrice-margin)
+    var intrt=(10.99/12)/100
+    console.log(LA)
+    console.log(margin)
+
     
     intpm=LA*intrt
     installments=Math.round((LA+(intpm*tenureM))/tenureM)
