@@ -8,7 +8,7 @@ function calculateEMI(){
     var vehiclePrice=0
 
     if (model=="Magnus EX"){
-      vehiclePrice=96250
+      vehiclePrice=91650
     }
     if(model=="Zeal EX"){
       vehiclePrice=99500
@@ -20,10 +20,10 @@ function calculateEMI(){
         vehiclePrice=167950
       }
     if (model=="Magnus LT"){
-        vehiclePrice=82400
+        vehiclePrice=86800
       }
     if (model=="Nexus ST"){
-        vehiclePrice=139435
+        vehiclePrice=138500
       }  
     
     vehiclePrice=vehiclePrice+1500
