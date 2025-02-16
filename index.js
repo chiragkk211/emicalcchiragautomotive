@@ -7,29 +7,24 @@ function calculateEMI(){
     var tenureM = parseInt(document.getElementById("tenure").value)
     var vehiclePrice=0
 
-    if (model=="Magnus EX"){
-      vehiclePrice=91650
+    if (model=="Magnus NEO"){
+      vehiclePrice=99250
     }
-    if(model=="Zeal EX"){
-      vehiclePrice=99500
+    if(model=="Nexus EX"){
+      vehiclePrice=125400
     }
     if(model=="Primus"){
         vehiclePrice=123200
       }
-    if(model=="Kratos R"){
-        vehiclePrice=167950
-      }
-    if (model=="Magnus LT"){
-        vehiclePrice=86800
-      }
+
     if (model=="Nexus ST"){
-        vehiclePrice=138500
+        vehiclePrice=130400
       }  
     
-    vehiclePrice=vehiclePrice+1500
-    margin=(DP-(0.02*vehiclePrice)-2000)/0.98
-    LA=(vehiclePrice-margin)
-    var intrt=(10.99/12)/100
+    vehiclePrice=vehiclePrice
+    
+    LA=(vehiclePrice-DP+3500)/0.9882
+    var intrt=(11.49/12)/100
     console.log(LA)
     console.log(margin)
 
