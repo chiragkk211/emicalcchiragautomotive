@@ -1,11 +1,14 @@
 
 function calculateEMI(){
-
+    var bankS = document.getElementById("bank");
     var modelS = document.getElementById("model");
     var model = modelS.value;
+    var bank = bankS.value;
     var DP = parseInt(document.getElementById("downpayment").value)
     var tenureM = parseInt(document.getElementById("tenure").value)
     var vehiclePrice=0
+
+    
 
     if (model=="Magnus NEO"){
       vehiclePrice=99250
@@ -21,13 +24,41 @@ function calculateEMI(){
         vehiclePrice=130400
       }  
     
+    if (bank=="Bajaj"){
+        LA=(vehiclePrice-DP+3500)/0.9882
+        var intrt=(11.49/12)/100
+        console.log(LA)
+        console.log(vehiclePrice)  
+        
+      }
+
+    if (bank=="Ecofy"){
+        LA=(vehiclePrice-DP+2710)/0.9764
+        var intrt=(7.99/12)/100
+        console.log(LA)
+        console.log(vehiclePrice)  
+        
+      }  
+
+    if (bank=="LT"){
+        LA=(vehiclePrice-DP+2200)/0.99
+        var intrt=(8.35/12)/100
+        console.log(LA)
+        console.log(vehiclePrice)  
+        
+      }    
+
+    if (bank=="Hero"){
+        LA=(vehiclePrice-DP+3200)
+        var intrt=(9.99/12)/100
+        console.log(LA)
+        console.log(vehiclePrice)  
+        
+      }   
+    
     vehiclePrice=vehiclePrice
     
-    LA=(vehiclePrice-DP+3500)/0.9882
-    var intrt=(11.49/12)/100
-    console.log(LA)
-    console.log(vehiclePrice)
-
+    
     
     intpm=LA*intrt
     installments=Math.round((LA+(intpm*tenureM))/tenureM)
