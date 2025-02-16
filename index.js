@@ -26,7 +26,7 @@ function calculateEMI(){
     LA=(vehiclePrice-DP+3500)/0.9882
     var intrt=(11.49/12)/100
     console.log(LA)
-    console.log(margin)
+    console.log(vehiclePrice)
 
     
     intpm=LA*intrt
