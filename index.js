@@ -14,14 +14,14 @@ function calculateEMI(){
       vehiclePrice=99250
     }
     if(model=="Nexus EX"){
-      vehiclePrice=125400
+      vehiclePrice=130600
     }
     if(model=="Primus"){
         vehiclePrice=123200
       }
 
     if (model=="Nexus ST"){
-        vehiclePrice=130400
+        vehiclePrice=136600
       }  
     
     if (bank=="Bajaj"){
