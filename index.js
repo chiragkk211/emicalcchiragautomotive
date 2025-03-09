@@ -21,7 +21,7 @@ function calculateEMI(){
       }
 
     if (model=="Nexus ST"){
-        vehiclePrice=136600
+        vehiclePrice=138600
       }  
     
     if (bank=="Bajaj"){
