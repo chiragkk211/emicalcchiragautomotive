@@ -11,7 +11,7 @@ function calculateEMI(){
     
 
     if (model=="Magnus NEO"){
-      vehiclePrice=99250
+      vehiclePrice=97200
     }
     if(model=="Nexus EX"){
       vehiclePrice=130600
@@ -21,7 +21,7 @@ function calculateEMI(){
       }
 
     if (model=="Nexus ST"){
-        vehiclePrice=138600
+        vehiclePrice=133150
       }  
     
     if (bank=="Bajaj"){
