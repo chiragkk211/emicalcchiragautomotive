@@ -23,6 +23,9 @@ function calculateEMI(){
     if (model=="Nexus ST"){
         vehiclePrice=122500
       }  
+    if (model=="Magnus GRAND"){
+        vehiclePrice=98500
+      }  
     
     if (bank=="Bajaj"){
         LA=(vehiclePrice-DP+3500)/0.9882
@@ -73,4 +76,5 @@ function calculateEMI(){
   
 
 }
+
 
