@@ -11,17 +11,17 @@ function calculateEMI(){
     
 
     if (model=="Magnus NEO"){
-      vehiclePrice=97200
+      vehiclePrice=95500
     }
     if(model=="Nexus EX"){
-      vehiclePrice=130600
+      vehiclePrice=122500
     }
     if(model=="Primus"){
         vehiclePrice=123200
       }
 
     if (model=="Nexus ST"){
-        vehiclePrice=133150
+        vehiclePrice=122500
       }  
     
     if (bank=="Bajaj"){
@@ -49,7 +49,7 @@ function calculateEMI(){
       }    
 
     if (bank=="Hero"){
-        LA=(vehiclePrice-DP+3200)
+        LA=(vehiclePrice-DP+5500)
         var intrt=(9.99/12)/100
         console.log(LA)
         console.log(vehiclePrice)  
@@ -73,3 +73,4 @@ function calculateEMI(){
   
 
 }
+
