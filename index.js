@@ -38,9 +38,9 @@ function calculateEMI(){
         
       }
 
-    if (bank=="Ecofy"){
-        LA=(vehiclePrice-DP+2710)/0.9764
-        var intrt=(7.99/12)/100
+    if (bank=="GFL"){
+        LA=(vehiclePrice-DP+4400)
+        var intrt=(8.99/12)/100
         console.log(LA)
         console.log(vehiclePrice)  
         
